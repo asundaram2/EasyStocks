@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">EasyStocks</string>
+    <string-array name="stocks">
+        <item>AAPL</item>
+        <item>GOOGL</item>
+        <item>TSN</item>
+    </string-array>
+
+    <string-array name="prices">
+        <item>$4.20</item>
+        <item>$4.20</item>
+        <item>$4.20</item>
+    </string-array>
 </resources>
