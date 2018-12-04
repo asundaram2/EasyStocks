@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent showStockActivity = new Intent(getApplicationContext(), DisplayStockInfo.class);
-                showStockActivity.putExtra("ITEM_INDEX", items[position]); // sets what it should display in DisplayStick based on the item
+                showStockActivity.putExtra("ITEM_INDEX", position); // sets what it should display in DisplayStick based on the item
                 startActivity(showStockActivity);
             }
         });
