@@ -4,11 +4,19 @@
         <item>AAPL</item>
         <item>GOOGL</item>
         <item>TSN</item>
+        <item>DFS</item>
+        <item>T</item>
+        <item>PYPL</item>
+        <item>SBUX</item>
     </string-array>
 
     <string-array name="prices">
-        <item>$184.82</item>
-        <item>$1,116.36</item>
-        <item>$60.27</item>
+        <item>$176.69</item>
+        <item>$1,062.47</item>
+        <item>$58.24</item>
+        <item>$66.38</item>
+        <item>$30.73</item>
+        <item>$89.19</item>
+        <item>$66.65</item>
     </string-array>
 </resources>

@@ -41,7 +41,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             case 2:
                 return R.drawable.tyson;
             default:
-                return -1;
+                return R.drawable.apple;
         }
     }
 
