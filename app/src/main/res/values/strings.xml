@@ -11,12 +11,12 @@
     </string-array>
 
     <string-array name="prices">
-        <item>$176.69</item>
-        <item>$1,062.47</item>
-        <item>$58.24</item>
-        <item>$66.38</item>
-        <item>$30.73</item>
-        <item>$89.19</item>
-        <item>$66.65</item>
+        <item>$184.82</item> <!-- AAPL -->
+        <item>$1,116.36</item> <!-- GOOGL -->
+        <item>$60.27</item> <!-- TSN -->
+        <item>$66.38</item> <!-- DFS -->
+        <item>$30.73</item> <!-- T -->
+        <item>$89.19</item> <!-- PYPL -->
+        <item>$66.65</item> <!-- SBUX -->
     </string-array>
 </resources>

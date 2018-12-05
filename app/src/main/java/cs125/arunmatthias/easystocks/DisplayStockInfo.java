@@ -40,6 +40,10 @@ public class DisplayStockInfo extends AppCompatActivity {
                 return R.drawable.google;
             case 2:
                 return R.drawable.tyson;
+            case 3:
+                return R.drawable.dfs;
+            case 4:
+                return R.drawable.t;
             default:
                 return R.drawable.apple;
         }
