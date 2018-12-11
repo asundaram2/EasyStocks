@@ -65,7 +65,39 @@ public class DisplayStockInfo extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 process.execute();
-            }else {
+            }  else if(text.equals("ATVI")) {
+                fetchData process = null;
+                try {
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/atvi/ohlc"));
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
+                process.execute();
+            } else if(text.equals("BRK.B")) {
+                fetchData process = null;
+                try {
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/brk.b/ohlc"));
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
+                process.execute();
+            } else if(text.equals("CMG")) {
+                fetchData process = null;
+                try {
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/cmg/ohlc"));
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
+                process.execute();
+            }   else if(text.equals("EBAY")) {
+                fetchData process = null;
+                try {
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/ebay/ohlc"));
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
+                process.execute();
+            } else {
                 displayAPIText.setText(text);
             }
         }

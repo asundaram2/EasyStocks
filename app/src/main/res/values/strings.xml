@@ -6,6 +6,10 @@
         <item>FB</item>
         <item>NFLX</item>
         <item>AMZN</item>
+        <item>ATVI</item>
+        <item>BRK.B</item>
+        <item>CMG</item>
+        <item>EBAY</item>
     </string-array>
 
     <string-array name="prices">
@@ -14,5 +18,9 @@
         <item>141.85</item> <!-- FB -->
         <item>269.70</item> <!-- NFLX -->
         <item>1641.02</item> <!-- AMZN -->
+        <item>$46.52</item> <!-- ATVI -->
+        <item>$210.12</item> <!-- BRK.B -->
+        <item>$468.35</item> <!-- CMG -->
+        <item>$29.26</item> <!-- EBAY -->
     </string-array>
 </resources>
