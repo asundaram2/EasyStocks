@@ -12,12 +12,50 @@
         <item>EBAY</item>
     </string-array>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <string-array name="prices">
         <item>$169.60</item> <!-- AAPL -->
         <item>$1,053.18</item> <!-- GOOGL -->
-        <item>141.85</item> <!-- FB -->
-        <item>269.70</item> <!-- NFLX -->
-        <item>1641.02</item> <!-- AMZN -->
+        <item>$141.85</item> <!-- FB -->
+        <item>$269.70</item> <!-- NFLX -->
+        <item>$1641.02</item> <!-- AMZN -->
         <item>$46.52</item> <!-- ATVI -->
         <item>$210.12</item> <!-- BRK.B -->
         <item>$468.35</item> <!-- CMG -->
