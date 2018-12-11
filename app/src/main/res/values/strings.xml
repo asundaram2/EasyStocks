@@ -3,20 +3,16 @@
     <string-array name="stocks">
         <item>AAPL</item>
         <item>GOOGL</item>
-        <item>TSN</item>
-        <item>DFS</item>
-        <item>T</item>
-        <item>PYPL</item>
-        <item>SBUX</item>
+        <item>FB</item>
+        <item>NFLX</item>
+        <item>AMZN</item>
     </string-array>
 
     <string-array name="prices">
         <item>$184.82</item> <!-- AAPL -->
         <item>$1,116.36</item> <!-- GOOGL -->
-        <item>$60.27</item> <!-- TSN -->
-        <item>$66.38</item> <!-- DFS -->
-        <item>$30.73</item> <!-- T -->
-        <item>$89.19</item> <!-- PYPL -->
-        <item>$66.65</item> <!-- SBUX -->
+        <item>$60.27</item> <!-- FB -->
+        <item>$66.38</item> <!-- NFLX -->
+        <item>$30.73</item> <!-- AMZN -->
     </string-array>
 </resources>
