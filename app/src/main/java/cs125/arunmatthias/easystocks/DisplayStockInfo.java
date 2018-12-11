@@ -1,15 +1,9 @@
 package cs125.arunmatthias.easystocks;
 
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Display;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -27,9 +21,9 @@ public class DisplayStockInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_stock_info);
 
-        // displays the name of the stock using the position and key from ThirdActivity.class
+        // displays the json from the API of the stock
         if (getIntent().hasExtra("ITEM_INDEX")) {
-            displayAPIText = (TextView) findViewById(R.id.displayAPI);
+            displayAPIText = findViewById(R.id.displayAPI);
             String text = getIntent().getExtras().getString("ITEM_INDEX");
             if (text.equals("AAPL")) {
                 fetchData process = null;

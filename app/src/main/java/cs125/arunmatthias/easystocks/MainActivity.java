@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Resources res = getResources();
-        listView = (ListView) findViewById(R.id.listView);
+        listView = findViewById(R.id.listView);
         items = res.getStringArray(R.array.stocks);
         prices = res.getStringArray(R.array.prices);
 
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent showStockActivity = new Intent(getApplicationContext(), DisplayStockInfo.class);
-                showStockActivity.putExtra("ITEM_INDEX", items[position]); // sets what it should display in DisplayStick based on the item
+                showStockActivity.putExtra("ITEM_INDEX", items[position]); // displays stock name if I have not added the api call for it
                 startActivity(showStockActivity);
             }
         });
