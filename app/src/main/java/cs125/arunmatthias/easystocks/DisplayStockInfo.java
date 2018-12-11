@@ -55,7 +55,23 @@ public class DisplayStockInfo extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 process.execute();
-            } else {
+            }  else if(text.equals("NFLX")) {
+                fetchData process = null;
+                try {
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/nflx/earnings"));
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
+                process.execute();
+            } else if(text.equals("AMZN")) {
+                fetchData process = null;
+                try {
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/amzn/earnings"));
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
+                process.execute();
+            }else {
                 displayAPIText.setText(text);
             }
         }
