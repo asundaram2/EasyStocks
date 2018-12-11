@@ -2,6 +2,7 @@ package cs125.arunmatthias.easystocks;
 
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -58,9 +59,6 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
             String maxPrice = jObject.getString("high");
             String lowPrice = jObject.getString("low");
 
-            //JSONArray jArray = jObject.getJSONArray("open");
-            //String priceOpen = jArray.getJSONObject(0).getString("price");
-            //String timeOpen = jArray.getJSONObject(0).getString("actualEPS");
             singleParsed =
                     "Price @ Open:   " + priceOpen + "\n" +
                     "Price @ Close:   " + priceClose + "\n" +

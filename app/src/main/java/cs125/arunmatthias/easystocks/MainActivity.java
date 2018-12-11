@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent showStockActivity = new Intent(getApplicationContext(), DisplayStockInfo.class);
                 showStockActivity.putExtra("ITEM_INDEX", items[position]); // displays stock name if I have not added the api call for it
+                String toast = items[position];
+                Toast.makeText(getApplicationContext(),toast,Toast.LENGTH_LONG).show();
                 startActivity(showStockActivity);
             }
         });
