@@ -22,6 +22,7 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
         url = setURL;
     }
     String data ="";
+    String singleParsed ="";
     @Override
     protected Void doInBackground(Void... voids) {
         try {
@@ -50,7 +51,28 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
+        try {
+            JSONObject jObject = new JSONObject(data);
+            String priceOpen = jObject.getJSONObject("open").getString("price");
+            String priceClose = jObject.getJSONObject("close").getString("price");
+            String maxPrice = jObject.getString("high");
+            String lowPrice = jObject.getString("low");
 
-        DisplayStockInfo.displayAPIText.setText(this.data);
+            //JSONArray jArray = jObject.getJSONArray("open");
+            //String priceOpen = jArray.getJSONObject(0).getString("price");
+            //String timeOpen = jArray.getJSONObject(0).getString("actualEPS");
+            singleParsed =
+                    "Price @ Open:   " + priceOpen + "\n" +
+                    "Price @ Close:   " + priceClose + "\n" +
+                    "Daily High:   " + maxPrice + "\n" +
+                    "Daily Low:   " + lowPrice + "\n";
+            DisplayStockInfo.displayAPIText.setText(singleParsed);
+        } catch (JSONException e) {
+            e.printStackTrace();
+            Log.d("TAG" , "JSON");
+        }
+
+
     }
+
 }

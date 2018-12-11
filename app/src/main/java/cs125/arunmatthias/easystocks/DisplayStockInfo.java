@@ -28,7 +28,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             if (text.equals("AAPL")) {
                 fetchData process = null;
                 try {
-                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/aapl/earnings"));
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/aapl/ohlc"));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -36,7 +36,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             } else if (text.equals("GOOGL")) {
                 fetchData process = null;
                 try {
-                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/googl/earnings"));
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/googl/ohlc"));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -44,7 +44,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             } else if(text.equals("FB")) {
                 fetchData process = null;
                 try {
-                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/fb/earnings"));
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/fb/ohlc"));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -52,7 +52,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             }  else if(text.equals("NFLX")) {
                 fetchData process = null;
                 try {
-                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/nflx/earnings"));
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/nflx/ohlc"));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -60,7 +60,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             } else if(text.equals("AMZN")) {
                 fetchData process = null;
                 try {
-                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/amzn/earnings"));
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/amzn/ohlc"));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
