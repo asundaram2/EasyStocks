@@ -54,10 +54,10 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
         super.onPostExecute(aVoid);
         try {
             JSONObject jObject = new JSONObject(data);
-            String priceOpen = jObject.getJSONObject("open").getString("price");
-            String priceClose = jObject.getJSONObject("close").getString("price");
-            String maxPrice = jObject.getString("high");
-            String lowPrice = jObject.getString("low");
+            String priceOpen = jObject.getJSONObject("ohlc").getJSONObject("open").getString("price");
+            String priceClose = jObject.getJSONObject("ohlc").getJSONObject("close").getString("price");
+            String maxPrice = jObject.getJSONObject("ohlc").getString("high");
+            String lowPrice = jObject.getJSONObject("ohlc").getString("low");
 
             singleParsed =
                     "Price @ Open:   " + priceOpen + "\n" +
