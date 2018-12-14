@@ -28,7 +28,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             if (text.equals("AAPL")) {
                 fetchData process = null;
                 try {
-                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/aapl/batch?types=ohlc"));
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/aapl/batch?types=ohlc,price"));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -36,7 +36,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             } else if (text.equals("GOOGL")) {
                 fetchData process = null;
                 try {
-                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/googl/batch?types=ohlc"));
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/googl/batch?types=ohlc,price"));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -44,7 +44,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             } else if(text.equals("FB")) {
                 fetchData process = null;
                 try {
-                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/fb/batch?types=ohlc"));
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/fb/batch?types=ohlc,price"));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -52,7 +52,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             }  else if(text.equals("NFLX")) {
                 fetchData process = null;
                 try {
-                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/nflx/batch?types=ohlc"));
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/nflx/batch?types=ohlc,price"));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -60,7 +60,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             } else if(text.equals("AMZN")) {
                 fetchData process = null;
                 try {
-                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/amzn/batch?types=ohlc"));
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/amzn/batch?types=ohlc,price"));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -68,7 +68,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             }  else if(text.equals("ATVI")) {
                 fetchData process = null;
                 try {
-                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/atvi/batch?types=ohlc"));
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/atvi/batch?types=ohlc,price"));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -76,7 +76,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             } else if(text.equals("BRK.B")) {
                 fetchData process = null;
                 try {
-                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/brk.b/batch?types=ohlc"));
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/brk.b/batch?types=ohlc,price"));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -84,7 +84,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             } else if(text.equals("CMG")) {
                 fetchData process = null;
                 try {
-                    process = new fetchData(new URL("https://api.iextrading.com/1.0/cmg/atvi/batch?types=ohlc"));
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/cmg/atvi/batch?types=ohlc,price"));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -92,7 +92,7 @@ public class DisplayStockInfo extends AppCompatActivity {
             }   else if(text.equals("EBAY")) {
                 fetchData process = null;
                 try {
-                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/ebay/batch?types=ohlc"));
+                    process = new fetchData(new URL("https://api.iextrading.com/1.0/stock/ebay/batch?types=ohlc,price"));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }

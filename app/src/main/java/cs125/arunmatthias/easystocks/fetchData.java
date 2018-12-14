@@ -58,8 +58,10 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
             String priceClose = jObject.getJSONObject("ohlc").getJSONObject("close").getString("price");
             String maxPrice = jObject.getJSONObject("ohlc").getString("high");
             String lowPrice = jObject.getJSONObject("ohlc").getString("low");
+            String price = jObject.getString("price");
 
             singleParsed =
+                    "Price:   " + price + "\n" +
                     "Price @ Open:   " + priceOpen + "\n" +
                     "Price @ Close:   " + priceClose + "\n" +
                     "Daily High:   " + maxPrice + "\n" +
